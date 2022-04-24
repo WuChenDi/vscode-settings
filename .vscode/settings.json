@@ -1,0 +1,124 @@
+{
+	"editor.detectIndentation": false,
+	"editor.wordWrap": "on",
+	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "boundary",
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"git.autofetch": true,
+	"terminal.integrated.profiles.windows": {
+		"GitBash": {
+			"path": "D:\\Program Files\\Git\\bin\\bash.exe"
+		}
+	},
+  "terminal.integrated.defaultProfile.windows": "GitBash",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontWeight": "300",
+  // "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
+  "terminal.integrated.tabs.enabled": true,
+	"files.associations": {
+		"*.cjson": "jsonc",
+		"*.wxss": "css",
+		"*.wxs": "javascript",
+		"*.env.development": "env",
+		"*.env.production": "env"
+	},
+	"minapp-vscode.disableAutoConfig": true,
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"wxml": "html"
+  },
+  "explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": -1,
+  "window.dialogStyle": "custom",
+  "workbench.activityBar.visible": true,
+	"workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.list.smoothScrolling": true,
+	"workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "left",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"workbench.colorCustomizations": {
+		// "activityBarBadge.background": "#84FFFF",
+		"list.activeSelectionForeground": "#84FFFF",
+		"list.inactiveSelectionForeground": "#84FFFF",
+		"list.highlightForeground": "#84FFFF",
+		"scrollbarSlider.activeBackground": "#84FFFF50",
+		"editorSuggestWidget.highlightForeground": "#84FFFF",
+		"textLink.foreground": "#84FFFF",
+		"progressBar.background": "#84FFFF",
+		"pickerGroup.foreground": "#84FFFF",
+		"tab.activeBorder": "#84FFFF",
+		"notificationLink.foreground": "#84FFFF",
+		"editorWidget.resizeBorder": "#84FFFF",
+		"editorWidget.border": "#84FFFF",
+		"settings.modifiedItemIndicator": "#84FFFF",
+		"settings.headerForeground": "#84FFFF",
+		"panelTitle.activeBorder": "#84FFFF",
+		"breadcrumb.activeSelectionForeground": "#84FFFF",
+		"menu.selectionForeground": "#84FFFF",
+		"menubar.selectionForeground": "#84FFFF",
+		"editor.findMatchBorder": "#84FFFF",
+		"selection.background": "#84FFFF40"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+	// Live Server
+	// To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
+	"liveServer.settings.host": "127.0.0.1",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"materialTheme.accent": "Sky",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"vetur.experimental.templateInterpolationService": true,
+	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "prettier.useTabs": true,
+	"prettier.jsxSingleQuote": true,
+  "prettier.enable": false, // I only use Prettier for manually formatting
+  "prettier.printWidth": 200,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  // "js/ts.implicitProjectConfig.checkJs": true,
+	"sync.gist": "",
+	"sync.quietSync": true,
+  "sync.autoUpload": true,
+  "sync.forceDownload": true,
+  "sync.forceUpload": true,
+  "tabnine.experimentalAutoImports": true,
+}
