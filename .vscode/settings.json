@@ -1,6 +1,5 @@
 {
 	"editor.detectIndentation": false,
-	// 自动换行
 	"editor.wordWrap": "on",
 	"editor.renderControlCharacters": true,
 	"editor.renderWhitespace": "boundary",
@@ -17,7 +16,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.fontFamily": "",
+  "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
   "terminal.integrated.tabs.enabled": true,
 	"files.associations": {
 		"*.cjson": "jsonc",
@@ -26,10 +25,7 @@
 		"*.env.development": "env",
 		"*.env.production": "env"
 	},
-	// 默认在启动时会自动相关文件关联的配置项，配置成功后会将此配置自动设置成 true，避免下次启动再重新配置
 	"minapp-vscode.disableAutoConfig": true,
-	// 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射。
-	// 示例: {"vue-html": "html", "javascript": "javascriptreact"}
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact",
 		"wxml": "html"
@@ -86,7 +82,7 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   // "js/ts.implicitProjectConfig.checkJs": true,
-	"sync.gist": "",
+	"sync.gist": "e4fa0c3080d705db470f7fdea6186a69",
 	"sync.quietSync": true,
   "sync.autoUpload": true,
   "sync.forceDownload": true,
