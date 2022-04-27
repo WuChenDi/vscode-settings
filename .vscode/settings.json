@@ -1,5 +1,6 @@
 {
 	"editor.detectIndentation": false,
+	// 自动换行
 	"editor.wordWrap": "on",
 	"editor.renderControlCharacters": true,
 	"editor.renderWhitespace": "boundary",
@@ -16,7 +17,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
-  // "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
+  "terminal.integrated.fontFamily": "",
   "terminal.integrated.tabs.enabled": true,
 	"files.associations": {
 		"*.cjson": "jsonc",
@@ -25,15 +26,18 @@
 		"*.env.development": "env",
 		"*.env.production": "env"
 	},
+	// 默认在启动时会自动相关文件关联的配置项，配置成功后会将此配置自动设置成 true，避免下次启动再重新配置
 	"minapp-vscode.disableAutoConfig": true,
+	// 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射。
+	// 示例: {"vue-html": "html", "javascript": "javascriptreact"}
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact",
 		"wxml": "html"
   },
   "explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": -1,
+  "explorer.confirmDragAndDrop": false,
   "window.dialogStyle": "custom",
+  "window.zoomLevel": -1,
   "workbench.activityBar.visible": true,
 	"workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editor.tabCloseButton": "right",
@@ -67,39 +71,6 @@
 		"editor.findMatchBorder": "#84FFFF",
 		"selection.background": "#84FFFF40"
 	},
-	"[html]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[less]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-	"[vue]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 	// Live Server
 	// To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
 	"liveServer.settings.host": "127.0.0.1",
