@@ -19,3 +19,5 @@ MIT
 
 <!-- ↓ Reference -->
 <!-- https://github.com/antfu/vscode-settings.git -->
+
+<!-- code --list-extensions | ForEach-Object {"code --install-extension $_"} > extensions.ps1 -->
