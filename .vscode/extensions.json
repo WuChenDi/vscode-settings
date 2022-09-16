@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "bierner.color-info",
+    "ChakrounAnas.turbo-console-log",
     "ChandZhang.wechat-snippet",
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
@@ -22,7 +23,7 @@
     "IronGeek.vscode-env",
     "kisstkondoros.vscode-gutter-preview",
     "LeetCode.vscode-leetcode",
-    "MariusAlchimavicius.json-to-ts",
+    "lokalise.i18n-ally",
     "miguelsolorio.fluent-icons",
     "mkxml.vscode-filesize",
     "ms-azuretools.vscode-docker",
@@ -36,6 +37,7 @@
     "oysun.vuehelper",
     "PKief.material-icon-theme",
     "qiu8310.minapp-vscode",
+    "quicktype.quicktype",
     "ritwickdey.LiveServer",
     "Shan.code-settings-sync",
     "steoates.autoimport",
