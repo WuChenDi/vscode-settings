@@ -21,3 +21,4 @@ MIT
 <!-- https://github.com/antfu/vscode-settings.git -->
 
 <!-- code --list-extensions | ForEach-Object {"code --install-extension $_"} > extensions.ps1 -->
+<!-- echo '{"recommendations":['$(code --list-extensions | sed 's/^/"/;s/$/",/g')']}' > extensions.json -->
