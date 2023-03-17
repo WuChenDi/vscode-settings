@@ -15,7 +15,7 @@
 
 ## LICENSE
 
-MIT
+[![GitHub license](https://img.shields.io/github/license/WuChenDi/vscode-settings)](https://github.com/WuChenDi/vscode-settings/blob/main/LICENSE)
 
 <!-- ↓ Reference -->
 <!-- https://github.com/antfu/vscode-settings.git -->
