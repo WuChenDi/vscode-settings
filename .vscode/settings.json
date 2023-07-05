@@ -9,7 +9,7 @@
   "git.autofetch": true,
   "terminal.integrated.profiles.windows": {
     "GitBash": {
-      "path": "D:\\Program Files\\Git\\bin\\bash.exe"
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
     }
   },
   "terminal.integrated.defaultProfile.windows": "GitBash",
@@ -99,6 +99,8 @@
   },
   "cSpell.userWords": [
     "astro",
+    "daterange",
+    "datetime",
     "devnet",
     "gotabit",
     "keplr",
@@ -108,4 +110,12 @@
   ],
   "svg.preview.mode": "svg",
   "window.zoomLevel": -1,
+  "editor.inlineSuggest.enabled": true,
+  "codetogether.userName": "wudi",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  }
 }
