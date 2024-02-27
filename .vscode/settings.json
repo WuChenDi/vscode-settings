@@ -9,7 +9,7 @@
   "git.autofetch": true,
   "terminal.integrated.profiles.windows": {
     "GitBash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+      "path": "D:\\Program Files\\Git\\bin\\bash.exe"
     }
   },
   "terminal.integrated.defaultProfile.windows": "GitBash",
@@ -36,14 +36,13 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "window.dialogStyle": "custom",
-  "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.editor.tabCloseButton": "right",
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
+  "workbench.editor.tabActionLocation": "right",
   // "workbench.colorCustomizations": {
   //   // "activityBarBadge.background": "#84FFFF",
   //   "list.activeSelectionForeground": "#84FFFF",
@@ -99,8 +98,6 @@
   },
   "cSpell.userWords": [
     "astro",
-    "daterange",
-    "datetime",
     "devnet",
     "gotabit",
     "keplr",
