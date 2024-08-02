@@ -42,7 +42,6 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "workbench.editor.tabActionLocation": "right",
   // "workbench.colorCustomizations": {
   //   // "activityBarBadge.background": "#84FFFF",
   //   "list.activeSelectionForeground": "#84FFFF",
@@ -70,7 +69,6 @@
   // To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
   "liveServer.settings.host": "127.0.0.1",
   "liveServer.settings.donotShowInfoMsg": true,
-  "diffEditor.ignoreTrimWhitespace": false,
   "vetur.experimental.templateInterpolationService": true,
   "prettier.useTabs": true,
   "prettier.jsxSingleQuote": true,
@@ -86,7 +84,17 @@
   "remote.SSH.remotePlatform": {
     "39.102.202.77": "linux",
     "8.143.198.143": "linux",
-    "192.168.31.61": "linux"
+    "192.168.31.61": "linux",
+    "8.218.185.194": "linux",
+    "8.218.195.235": "linux",
+    "47.76.38.200": "linux",
+    "localhost": "linux",
+    "8.217.252.180": "linux",
+    "8.217.97.92": "linux",
+    "8.217.234.142": "linux",
+    "8.217.1.150": "linux",
+    "chenghuishop.com": "linux",
+    "bt.chenghuishop.com": "linux",
   },
   "tabnine.experimentalAutoImports": true,
   "[css]": {
@@ -106,13 +114,25 @@
     "wudi"
   ],
   "svg.preview.mode": "svg",
+  "workbench.editor.tabActionLocation": "right",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "window.zoomLevel": -1,
-  "editor.inlineSuggest.enabled": true,
-  "codetogether.userName": "wudi",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  }
+  // Control the nested display of related files
+  // "explorer.fileNesting.enabled": true,
+  // "explorer.fileNesting.expand": false,
+  // "explorer.fileNesting.patterns": {
+  //   "*.ts": "$(capture).test.ts, $(capture).test.tsx",
+  //   "*.tsx": "$(capture).test.ts, $(capture).test.tsx",
+  //   "*.env": "$(capture).env.*",
+  //   "CHANGELOG.md": "CHANGELOG*",
+  //   "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,LICENSE,.gitattributes,.gitignore,.gitpod.yml,CNAME,.npmrc,.browserslistrc",
+  //   ".eslintrc.cjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,.stylelintrc.*,.editorconfig*"
+  // },
 }
