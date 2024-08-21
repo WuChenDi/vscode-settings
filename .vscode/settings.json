@@ -9,10 +9,12 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "window.zoomLevel": -1,
   "window.autoDetectColorScheme": true,
+  "workbench.activityBar.location": "default",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.tabActionLocation": "left",
   "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 10,
   // "workbench.colorCustomizations": {
@@ -83,6 +85,80 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 5,
 
+  "files.associations": {
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.env.development": "env",
+    "*.env.production": "env"
+  },
+
+  // ==========  Global Level Config, needs to put in User Settings ==========
+  "window.dialogStyle": "custom",
+  "window.nativeTabs": true, // this is great, macOS only
+  "window.title": "${rootName}", // this make tabs more readable
+  "window.titleBarStyle": "custom",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US",
+  "cSpell.userWords": [
+    "astro",
+    "devnet",
+    "gotabit",
+    "keplr",
+    "nestjs",
+    "unoptimized",
+    "wudi"
+  ],
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": true,
+      "compare": true,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": true,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "svg.preview.mode": "svg",
+
   // prettier config
   "prettier.enable": false,
   "prettier.singleQuote": true,
@@ -103,37 +179,36 @@
   "prettier.bracketSameLine": false,
   "prettier.vueIndentScriptAndStyle": false,
 
-  "files.associations": {
-    "*.cjson": "jsonc",
-    "*.wxss": "css",
-    "*.wxs": "javascript",
-    "*.env.development": "env",
-    "*.env.production": "env"
+  // ========== File Nesting ==========
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
+    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+    "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
+    // "*.ts": "$(capture).test.ts, $(capture).test.tsx",
+    // "*.tsx": "$(capture).test.ts, $(capture).test.tsx",
+    "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
+    "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+    // "*.env": "$(capture).env.*",
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "CHANGELOG.md": "CHANGELOG*",
+    // "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,LICENSE,.gitattributes,.gitignore,.gitpod.yml,CNAME,.npmrc,.browserslistrc",
+    "nuxt.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "package.json": ".browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .releaserc*, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json, eslint*, firebase.json, grunt*, gulp*, jenkins*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, simple-git-hooks*, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, xo.config.*, yarn*",
+    ".eslintrc.cjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,.stylelintrc.*,.editorconfig*",
+    "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    "shims.d.ts": "*.d.ts",
+    "vite.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
   },
 
-  // ==========  Global Level Config, needs to put in User Settings ==========
-  "window.dialogStyle": "custom",
-  "window.nativeTabs": true, // this is great, macOS only
-  "window.title": "${rootName}", // this make tabs more readable
-  "window.titleBarStyle": "custom",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-
-  "cSpell.userWords": [
-    "astro",
-    "devnet",
-    "gotabit",
-    "keplr",
-    "nestjs",
-    "unoptimized",
-    "wudi"
-  ],
-
   "tabnine.experimentalAutoImports": true,
-  // Live Server
-  // To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
+  "security.workspace.trust.untrustedFiles": "open",
   "liveServer.settings.host": "127.0.0.1",
   "liveServer.settings.donotShowInfoMsg": true,
-  "security.workspace.trust.untrustedFiles": "open",
   "remote.autoForwardPortsSource": "hybrid",
   "remote.SSH.remotePlatform": {
     "39.102.202.77": "linux",
@@ -156,14 +231,13 @@
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "svg.preview.mode": "svg",
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }
