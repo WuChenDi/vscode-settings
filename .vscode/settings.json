@@ -51,6 +51,7 @@
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.stickyScroll.enabled": true,
   "editor.hover.sticky": true,
+  "editor.linkedEditing": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
