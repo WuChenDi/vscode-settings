@@ -2,6 +2,7 @@
   // ========== Visuals ==========
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": "active",
+  // "editor.lineNumbers": "interval",
   "editor.detectIndentation": false,
   "editor.wordWrap": "on",
   "editor.renderControlCharacters": true,
@@ -12,10 +13,11 @@
   "workbench.activityBar.location": "default",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.tabActionLocation": "left",
+  "workbench.editor.tabActionLocation": "right",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
   // "workbench.colorCustomizations": {
   //   // "activityBarBadge.background": "#84FFFF",
@@ -83,7 +85,7 @@
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.value": 10,
 
   "files.associations": {
     "*.cjson": "jsonc",
@@ -103,13 +105,9 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
-    "astro",
-    "devnet",
-    "gotabit",
-    "keplr",
-    "nestjs",
-    "unoptimized",
-    "wudi"
+    "wudi",
+    "cdlab996",
+    "gotabit"
   ],
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
