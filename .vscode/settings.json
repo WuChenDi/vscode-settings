@@ -8,7 +8,7 @@
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "window.zoomLevel": -1,
+  // "window.zoomLevel": -1,
   "window.autoDetectColorScheme": true,
   "workbench.activityBar.location": "default",
   "workbench.productIconTheme": "fluent-icons",
@@ -105,9 +105,10 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
-    "wudi",
     "cdlab996",
-    "gotabit"
+    "gotabit",
+    "mgcloud",
+    "wudi"
   ],
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
