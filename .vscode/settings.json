@@ -5,6 +5,8 @@
   // "editor.lineNumbers": "interval",
   "editor.detectIndentation": false,
   "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
