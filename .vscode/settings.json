@@ -12,9 +12,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   // "window.zoomLevel": -1,
   "window.autoDetectColorScheme": true,
-  "workbench.activityBar.location": "default",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.tabActionLocation": "right",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "left",
@@ -44,7 +42,6 @@
   //   "editor.findMatchBorder": "#84FFFF",
   //   "selection.background": "#84FFFF40",
   // },
-
   // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -88,7 +85,30 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 20,
-
+  "search.exclude": {
+    "**/*.snap": true,
+    "**/*.svg": true,
+    "**/.git": true,
+    "**/.github": false,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/assets": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/public": true,
+    "**/temp": true,
+    "**/yarn.lock": true,
+    "**/CHANGELOG*": true,
+    "**/LICENSE*": true,
+  },
   "files.associations": {
     "*.cjson": "jsonc",
     "*.wxss": "css",
@@ -96,14 +116,12 @@
     "*.env.development": "env",
     "*.env.production": "env"
   },
-
   // ==========  Global Level Config, needs to put in User Settings ==========
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}", // this make tabs more readable
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
-
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
@@ -112,6 +130,13 @@
     "mgcloud",
     "wudi"
   ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
@@ -158,9 +183,11 @@
       "stash": true
     }
   },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet",
   "svg.preview.mode": "svg",
 
-  // prettier config
+  // ========== Prettier Config ==========
   "prettier.enable": false,
   "prettier.singleQuote": true,
   "prettier.printWidth": 90,
@@ -179,7 +206,6 @@
   "prettier.insertPragma": false,
   "prettier.bracketSameLine": false,
   "prettier.vueIndentScriptAndStyle": false,
-
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -205,7 +231,6 @@
     "vite.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
   },
-
   "tabnine.experimentalAutoImports": true,
   "security.workspace.trust.untrustedFiles": "open",
   "liveServer.settings.host": "127.0.0.1",
@@ -227,7 +252,9 @@
     "rng99.com": "linux",
     "bt.chenghuishop.com": "linux",
     "211.72.152.176": "linux",
-    "94.74.122.144": "linux"
+    "94.74.122.144": "linux",
+    "35.194.251.251": "linux",
+    "47.76.72.23": "linux"
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
@@ -240,5 +267,10 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.enc": "default"
   },
 }
