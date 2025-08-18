@@ -1,4 +1,4 @@
-<samp><b>Di-got's VS Code Settings</b></samp>
+<samp><b>My VS Code Settings and Extensions</b></samp>
 
 [`.vscode/settings.json`](./.vscode/settings.json)<br>
 [`.vscode/extensions.json`](./.vscode/extensions.json)
@@ -13,9 +13,9 @@
 
 <br>
 
-## LICENSE
+## 📜 License
 
-[![GitHub license](https://img.shields.io/github/license/WuChenDi/vscode-settings)](https://github.com/WuChenDi/vscode-settings/blob/main/LICENSE)
+[MIT](./LICENSE) License &copy; 2022-PRESENT [wudi](https://github.com/WuChenDi)
 
 <!-- ↓ Reference -->
 <!-- https://github.com/antfu/vscode-settings.git -->
