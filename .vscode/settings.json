@@ -42,6 +42,7 @@
   //   "editor.findMatchBorder": "#84FFFF",
   //   "selection.background": "#84FFFF40",
   // },
+
   // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -70,7 +71,7 @@
   "git.untrackedChanges": "separate",
   "terminal.integrated.profiles.windows": {
     "GitBash": {
-      "path": "D:\\Program Files\\Git\\bin\\bash.exe"
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
     }
   },
   "terminal.integrated.defaultProfile.windows": "GitBash",
@@ -116,12 +117,14 @@
     "*.env.development": "env",
     "*.env.production": "env"
   },
+
   // ==========  Global Level Config, needs to put in User Settings ==========
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}", // this make tabs more readable
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
+
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "cSpell.userWords": [
@@ -206,6 +209,7 @@
   "prettier.insertPragma": false,
   "prettier.bracketSameLine": false,
   "prettier.vueIndentScriptAndStyle": false,
+
   // ========== File Nesting ==========
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
@@ -231,6 +235,7 @@
     "vite.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": ".babelrc*, .codecov, .cssnanorc*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
   },
+
   "tabnine.experimentalAutoImports": true,
   "security.workspace.trust.untrustedFiles": "open",
   "liveServer.settings.host": "127.0.0.1",
@@ -269,8 +274,5 @@
     "editor.defaultFormatter": "Vue.volar"
   },
   "python.analysis.typeCheckingMode": "basic",
-  "workbench.editorAssociations": {
-    "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.enc": "default"
-  },
+  "dart.flutterSdkPath": "C:\\wudi\\flutter",
 }
