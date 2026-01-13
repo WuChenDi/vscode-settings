@@ -12,7 +12,6 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   // "window.zoomLevel": -1,
   "window.autoDetectColorScheme": true,
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.editor.tabActionLocation": "right",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "left",
@@ -86,29 +85,12 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 20,
-  "search.exclude": {
-    "**/*.snap": true,
-    "**/*.svg": true,
-    "**/.git": true,
-    "**/.github": false,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/assets": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
-    "**/pnpm-lock.yaml": true,
-    "**/public": true,
-    "**/temp": true,
-    "**/yarn.lock": true,
-    "**/CHANGELOG*": true,
-    "**/LICENSE*": true,
+  "workbench.editor.customLabels.enabled": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/*.{tsx,jsx}": "${dirname}/${filename}.${extname}",
+    "**/components/**": "${dirname}/${filename}.${extname} : Comp",
+    "**/actions/**": "${dirname}/${filename}.${extname} : Action",
+    "**/actions/*": "${dirname}/${filename}.${extname} : Action",
   },
   "files.associations": {
     "*.cjson": "jsonc",
@@ -187,7 +169,7 @@
     }
   },
   "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "svg.preview.mode": "svg",
 
   // ========== Prettier Config ==========
@@ -274,5 +256,5 @@
     "editor.defaultFormatter": "Vue.volar"
   },
   "python.analysis.typeCheckingMode": "basic",
-  "dart.flutterSdkPath": "C:\\wudi\\flutter",
+  "claudeCode.preferredLocation": "panel"
 }
